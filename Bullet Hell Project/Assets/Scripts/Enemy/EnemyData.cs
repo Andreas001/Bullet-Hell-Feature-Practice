@@ -1,0 +1,76 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "new_enemy_data", menuName = "Data/Enemy Data")]
+public class EnemyData : ScriptableObject {
+    #region Variables
+    [Header("Collider Shape")]
+    [SerializeField] string shape = "circle";
+
+    [Header("Stats")]
+    [SerializeField] int scoreValue = 100; 
+    [SerializeField] float health = 100f; 
+    [SerializeField] float minFireRate = 0.1f;
+    [SerializeField] float maxFireRate = 0.3f;
+    [SerializeField] bool randomFireRate = false;
+    [SerializeField] float firingDuration = 0.1f;
+
+    [Header("Bullet Settings")]
+    [SerializeField] BulletData bulletData;
+    [SerializeField] int amountOfBullets = 1;
+    [SerializeField] int bulletStackAmount = 1;
+    [SerializeField] float timeBetweenBulletStackSpawns = 0.5f;
+    [SerializeField] int bulletSpreadAmount = 1;
+    [SerializeField] float spreadDistance = 0.3f;
+    [SerializeField] bool aimedAtPlayer = false;
+
+    [Header("Firing Angle Settings")]
+    [SerializeField] float circleRadius = 0.1f;
+    [SerializeField] float circleStartAngle = 180f, circleEndAngle = 180f;
+    [SerializeField] float circleAngleModifier = 0f; //Needed to add modify circleStartangle and circleEndangle to create a changing angle effect
+    [SerializeField] float randomRange = 0f; //Will be used to give spawn locations a bit of variety by adding its angle with Random.Range(-randomRange, randomRange);    
+
+    [Header("Graphics")]
+    [SerializeField] Sprite sprite;
+    [SerializeField] float durationOfDeath = 1f;
+    [SerializeField] GameObject deathVfxPrefab;
+    [SerializeField] AudioClip deathSfx;
+    [SerializeField] [Range(0, 1)] float deathSfxVolume = 0.7f;
+    [SerializeField] AudioClip shootSfx;
+    [SerializeField][Range(0, 1)] float shootSfxVolume = 0.25f;
+    #endregion
+
+    #region Getters and Setters
+    public string Shape { get => shape; set => shape = value; }
+
+    public int ScoreValue { get => scoreValue; set => scoreValue = value; }
+    public float Health { get => health; set => health = value; }
+    public float MinFireRate { get => minFireRate; set => minFireRate = value; }
+    public float MaxFireRate { get => maxFireRate; set => maxFireRate = value; }
+    public bool RandomFireRate { get => randomFireRate; set => randomFireRate = value; }
+    public float FiringDuration { get => firingDuration; set => firingDuration = value; }
+
+    public BulletData BulletData { get => bulletData; set => bulletData = value; }
+    public int AmountOfBullets { get => amountOfBullets; set => amountOfBullets = value; }
+    public int BulletStackAmount { get => bulletStackAmount; set => bulletStackAmount = value; }
+    public float TimeBetweenBulletStackSpawns { get => timeBetweenBulletStackSpawns; set => timeBetweenBulletStackSpawns = value; }
+    public int BulletSpreadAmount { get => bulletSpreadAmount; set => bulletSpreadAmount = value; }
+    public float SpreadDistance { get => spreadDistance; set => spreadDistance = value; }
+
+    public float CircleRadius { get => circleRadius; set => circleRadius = value; }
+    public float CircleStartAngle { get => circleStartAngle; set => circleStartAngle = value; }
+    public float CircleEndAngle { get => circleEndAngle; set => circleEndAngle = value; }
+    public float CircleAngleModifier { get => circleAngleModifier; set => circleAngleModifier = value; }
+    public float RandomRange { get => randomRange; set => randomRange = value; }
+
+    public Sprite Sprite { get => sprite; set => sprite = value; }
+    public float DurationOfDeath { get => durationOfDeath; set => durationOfDeath = value; }
+    public GameObject DeathVfxPrefab { get => deathVfxPrefab; set => deathVfxPrefab = value; }
+    public AudioClip DeathSfx { get => deathSfx; set => deathSfx = value; }
+    public float DeathSfxVolume { get => deathSfxVolume; set => deathSfxVolume = value; }
+    public AudioClip ShootSfx { get => shootSfx; set => shootSfx = value; }
+    public float ShootSfxVolume { get => shootSfxVolume; set => shootSfxVolume = value; }
+    public bool AimedAtPlayer { get => aimedAtPlayer; set => aimedAtPlayer = value; }
+    #endregion
+}

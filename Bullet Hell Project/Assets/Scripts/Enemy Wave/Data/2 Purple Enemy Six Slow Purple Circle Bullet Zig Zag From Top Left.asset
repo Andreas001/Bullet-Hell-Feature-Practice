@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e2ebb9f25a54d439c5265bcd5f0e66, type: 3}
+  m_Name: 2 Purple Enemy Six Slow Purple Circle Bullet Zig Zag From Top Left
+  m_EditorClassIdentifier: 
+  pathPrefab: {fileID: 3147118814409165013, guid: dce983c826415a642a827419c8626490, type: 3}
+  timeBetweenSpawns: 1.5
+  spawnRandomfactor: 0.3
+  enemyData: {fileID: 11400000, guid: 0a83c4451f5fc89468b8225af9ae7518, type: 2}
+  numberOfEnemies: 2
+  enemyMoveSpeed: 1.5
+  waitTimeOnWaypoint: 0.1
+  isLoopingPath: 0
+  timeUntilNextWave: 0.3

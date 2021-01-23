@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621ea7f1be08d554ba7960bfc41041b6, type: 3}
+  m_Name: 1st Phase
+  m_EditorClassIdentifier: 
+  patternSetData:
+  - {fileID: 11400000, guid: ee5b9cf91f11b784bb34f015ffa9b94f, type: 2}
+  - {fileID: 11400000, guid: 9efb1954ed4056245968fa139833685c, type: 2}
+  - {fileID: 11400000, guid: 4d6ce4d9eb8fadf4082f715fbdf1e9ce, type: 2}
+  phase: 0
+  changePhaseAtThisHealth: 7000

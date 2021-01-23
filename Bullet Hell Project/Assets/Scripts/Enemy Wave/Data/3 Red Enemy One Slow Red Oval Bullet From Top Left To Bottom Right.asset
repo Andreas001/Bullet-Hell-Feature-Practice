@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e2ebb9f25a54d439c5265bcd5f0e66, type: 3}
+  m_Name: 3 Red Enemy One Slow Red Oval Bullet From Top Left To Bottom Right
+  m_EditorClassIdentifier: 
+  pathPrefab: {fileID: 8842562451076041973, guid: 247975cbd6e0dc744a8773d19334b8f4, type: 3}
+  timeBetweenSpawns: 1
+  spawnRandomfactor: 0.3
+  enemyData: {fileID: 11400000, guid: 14c60afb29fa33e4da7acf834f6bfb77, type: 2}
+  numberOfEnemies: 3
+  enemyMoveSpeed: 2
+  waitTimeOnWaypoint: 0.1
+  isLoopingPath: 0
+  timeUntilNextWave: 0.3

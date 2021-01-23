@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64159f7c9e8a894438c43d5bd01d2eac, type: 3}
+  m_Name: Red Enemy One Slow Red Oval Bullet
+  m_EditorClassIdentifier: 
+  shape: small
+  scoreValue: 100
+  health: 100
+  minFireRate: 0.2
+  maxFireRate: 3
+  randomFireRate: 1
+  firingDuration: 0.1
+  bulletData: {fileID: 11400000, guid: 856176c9353b8e742b07823e5f72181a, type: 2}
+  amountOfBullets: 1
+  bulletStackAmount: 1
+  timeBetweenBulletStackSpawns: 0
+  bulletSpreadAmount: 1
+  spreadDistance: 0
+  circleRadius: 0.1
+  circleStartAngle: 180
+  circleEndAngle: 180
+  circleAngleModifier: 0
+  randomRange: 0
+  sprite: {fileID: 3228903892712671954, guid: 8ce9e6c0df4123e469dbd81c2123eb50, type: 3}
+  durationOfDeath: 1
+  deathVfxPrefab: {fileID: 0}
+  deathSfx: {fileID: 0}
+  deathSfxVolume: 0.7
+  shootSfx: {fileID: 0}
+  shootSfxVolume: 0.25

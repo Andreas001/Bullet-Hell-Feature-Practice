@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cfdc52643877b04484bb70ea57900f3, type: 3}
+  m_Name: 2nd Pattern
+  m_EditorClassIdentifier: 
+  fireRate: 0.4
+  spawnLocation: {x: 0, y: 0, z: 0}
+  bulletData: {fileID: 11400000, guid: a7abbc9211bb3d84484beafca686de7e, type: 2}
+  amountOfBullets: 3
+  bulletStackAmount: 1
+  timeBetweenBulletStackSpawns: 0.5
+  bulletSpreadAmount: 10
+  spreadDistance: 6
+  circleRadius: 0.1
+  circleStartAngle: 0
+  circleEndAngle: 360
+  circleAngleModifier: 30
+  randomRange: 10
